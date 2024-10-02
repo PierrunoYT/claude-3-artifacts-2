@@ -1,91 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-header {
   background-color: #282c34;
   padding: 20px;
   color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .App-main {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 20px;
+  display: flex;
+  flex: 1;
   padding: 20px;
-  min-height: calc(100vh - 100px);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .column {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 5px;
-  overflow-y: auto;
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.left-column {
+.column h2 {
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+  color: #333;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+.code-renderer {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.chat-messages {
-  flex-grow: 1;
-  overflow-y: auto;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.message {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 80%;
-}
-
-.message.user {
-  background-color: #e1f5fe;
-  align-self: flex-end;
-}
-
-.message.assistant {
-  background-color: #f0f0f0;
-  align-self: flex-start;
-}
-
-.message img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.chat-input {
-  display: flex;
-  gap: 10px;
-}
-
-.chat-input input[type="text"] {
-  flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.chat-input button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.chat-input button:hover {
-  background-color: #45a049;
-}
-
 @media (max-width: 768px) {
   .App-main {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .column {
+    margin: 10px 0;
   }
 }
