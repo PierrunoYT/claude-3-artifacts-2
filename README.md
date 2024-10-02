@@ -15,8 +15,8 @@ To set up the project, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/PierrunoYT/-claude-3-artifacts-2.git
-   cd -claude-3-artifacts-2
+   git clone https://github.com/PierrunoYT/claude-3-artifacts-2.git
+   cd claude-3-artifacts-2
    ```
 
 2. Install dependencies for both frontend and backend:
