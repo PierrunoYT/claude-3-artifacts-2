@@ -10,7 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
     "cors": "^2.8.5",
-    "express": "^4.21.0"
+    "express": "^4.21.0",
+    "node-fetch": "^2.7.0",
+    "react-live": "^4.1.7"
   }
 }
