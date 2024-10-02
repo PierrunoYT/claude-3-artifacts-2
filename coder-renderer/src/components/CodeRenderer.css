@@ -1,0 +1,66 @@
+.code-renderer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.live-editor {
+  flex: 1;
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.live-preview {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.react-live-error {
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #ffeeee;
+  border: 1px solid #ff0000;
+  margin-bottom: 10px;
+}
+
+/* Customize the appearance of the live editor */
+.prism-code {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 14px !important;
+  background-color: #f4f4f4 !important;
+  border-radius: 4px;
+}
+
+/* Add some basic syntax highlighting */
+.token.keyword {
+  color: #07a;
+}
+
+.token.function {
+  color: #DD4A68;
+}
+
+.token.string {
+  color: #690;
+}
+
+.token.number {
+  color: #905;
+}
+
+.token.operator {
+  color: #9a6e3a;
+}
+
+.token.comment {
+  color: slategray;
+}
