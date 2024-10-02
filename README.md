@@ -1,6 +1,6 @@
-# Coder Renderer
+# Claude 3 Artifacts 2
 
-Coder Renderer is a web application that combines a React frontend with a Node.js backend to provide a coding and rendering environment.
+Claude 3 Artifacts 2 is a project that demonstrates the capabilities of AI-assisted development, combining a React frontend with a Node.js backend.
 
 ## Project Structure
 
@@ -56,7 +56,7 @@ This will start the React development server for the frontend and the Node.js se
 
 ## Contributing
 
-Contributions to the Coder Renderer project are welcome. Please ensure to update tests as appropriate.
+Contributions to the Claude 3 Artifacts 2 project are welcome. Please ensure to update tests as appropriate.
 
 ## License
 
