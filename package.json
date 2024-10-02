@@ -14,6 +14,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "node-fetch": "^2.7.0",
-    "react-live": "^4.1.7"
+    "react-live": "^4.1.7",
+    "react-router-dom": "^6.26.2"
   }
 }
